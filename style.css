@@ -25,7 +25,7 @@ html, body {
 body {
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    min-height: 100vh;
     background-image: linear-gradient(to right bottom,
         #111111,
         #1a182d,
@@ -53,12 +53,21 @@ body {
 
 .wrapper {
     flex: 1;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main.main-content {
+    flex: 1;
+    padding-top: 60px;
 }
 
 /* Header */
 .header-container {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -262,10 +271,6 @@ li.nombre-amigo {
 }
 
 /* Footer */
-.main-content > footer {
-    margin-top: auto;
-}
-
 footer {
     background-color: var(--color-primary);
     color: var(--color-text);
@@ -367,8 +372,16 @@ footer {
         text-align: center;
     }
 
+    main.main-content {
+        padding-top: 180px;
+    }
+
     .input-container {
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+
+    .modal-container {
+        margin: 45% auto;
     }
 }
