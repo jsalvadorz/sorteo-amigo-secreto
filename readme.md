@@ -5,9 +5,11 @@
 ![Release date](https://img.shields.io/badge/release_date-july_2025-red)
 ![GitHub Org's stars](https://img.shields.io/github/stars/jsalvadorz?style=social)
 
-En un juego que permite a los usuarios ingresar los nombres de sus amigos en una lista para luego realizar un sorteo aleatorio y determinar quién es el **"amigo secreto"**.
+Es un juego que permite a los usuarios ingresar los nombres de sus amigos en una lista para luego realizar un sorteo aleatorio y determinar quién es el **"amigo secreto"**.
 
 ## Aplicación
+
+![amigo secreto app](https://github.com/user-attachments/assets/fa38e6d4-350d-4466-91a7-8d9d0640f86b)
 
 ## Instrucciones de uso
 
