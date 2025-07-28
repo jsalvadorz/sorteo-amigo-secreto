@@ -14,55 +14,57 @@
 </head>
 
 <body>
+    <header class="header-container">
+        <div class="logo-container">
+            <a href="index.html" class="logo">&lt;/&gt; jsalvadorz</a>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="https://github.com/jsalvadorz/sorteo-amigo-secreto">Repo GitHub</a></li>
+                <li><a href="https://github.com/jsalvadorz">Acerca</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main class="main-content">
-        <header class="header-container">
-            <div class="logo-container">
-                <a href="/" class="logo">&lt;/&gt; jsalvadorz</a>
-            </div>
-
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="https://github.com/jsalvadorz/sorteo-amigo-secreto">Repo GitHub</a></li>
-                    <li><a href="https://github.com/jsalvadorz">Acerca</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="banner-section">
-            <div class="banner-content">
-                <h1 class="main-title">Amigo Secreto</h1>
-                <img src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto">
-            </div>
-        </section>
-        
-        <section class="input-section">
-            <div class="input-container">
-                <h2 class="section-title">🫡 Ingresa los nombres de tus amigos</h2>
-                <div class="input-wrapper">
-                    <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
-                    <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+        <div class="wrapper">
+            <section class="banner-section">
+                <div class="banner-content">
+                    <h1 class="main-title">Amigo Secreto</h1>
+                    <img src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto">
                 </div>
+            </section>
             
-                <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+            <section class="input-section">
+                <div class="input-container">
+                    <h2 class="section-title">🫡 Ingresa los nombres de tus amigos</h2>
+                    <div class="input-wrapper">
+                        <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
+                        <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+                    </div>
+                
+                    <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
 
-                <div class="button-container">
-                    <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
-                        <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
-                        Sortear amigo
-                    </button>
+                    <div class="button-container">
+                        <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                            <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
+                            Sortear amigo
+                        </button>
+                    </div>
+
+                    <div id="resultado" class="result-list" aria-live="polite"></div>
                 </div>
-
-                <div id="resultado" class="result-list" aria-live="polite"></div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="footer-container">
-                <p>&copy; <span id="year"></span> Amigo Secreto. Desarrollado por <a href="https://github.com/jsalvadorz">jsalvadorz.</a></p>
-            </div>
-        </footer>
+            </section>
+         </div>
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; <span id="year"></span> Amigo Secreto. Desarrollado por <a href="https://github.com/jsalvadorz">jsalvadorz</a>.</p>
+        </div>
+    </footer>
 
     <div id="miModal" class="modal">
         <div class="modal-container">
